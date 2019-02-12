@@ -1,0 +1,43 @@
+
+
+Git push, pull Verbindung mit SSH-Schlüsselpaar
+-----------------------------------------------
+Einfacher als man meint!!! :D
+
+
+(Für Windows PC mit der Git-Bash)
+
+
+*********************Kurz Anleitung*******************************************
+
+Nur im Ordner .ssh bei %userprofile% die Konsole öffnen,
+dann: ssh-keygen * 
+
+1 mal mit Enter bestätigen, dann
+2 mal Enter ohne Passwörter. **
+
+Dann noch den 'id_rsa.pub' Public Key bei Github, Gitlab bzw. Bitbucket Hochladen! :/
+
+******************************************************************************
+
+* ging ganz ohne zusätzliche Angaben.
+** Sonst muss man die immer beim Pushen und Pullen Eingeben! :(((
+
+
+Fertig!!!!! :)))))
+
+
+
+Ps: 
+
+bei der ersten Verbindung mit fetch, pull oder push: (und dem SSH Protokol! ;) )
+
+...........
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'bitbucket.org,2473:da60:ff40::67c3:9b9f' (RSA) to the list of known hosts.
+
+Das muss man noch Bestätigen. Wenn man möchte dann noch den Fingerprint als Kontrolle vergleichen.
+Danach wird mit 'yes' eine 'known_hosts' Datei automatisch Angelegt mit den Bekannten Hosts.
+
+Ps2: man kann im Windows-Explorer einfach   %userprofile%   eingeben und man ist dann im Ordner, wo man
+ein .ssh Ordner finden sollte. Wenn noch nicht vorhanden wird er nach obigen Schritten automatisch Erzeugt. :)
